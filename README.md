@@ -13,7 +13,7 @@ You have to inject the TwitterOauth Object
 use Arzola\TwitterClient;
 use Abraham\TwitterOAuth\TwitterOAuth;
 
-$client = new TwitterClient(TwitterOAuth('consumer_key', 'consumer_secret', 'access_token',
+$client = new TwitterClient(new TwitterOAuth('consumer_key', 'consumer_secret', 'access_token',
                                                      'access_token_secret'));
 $tweets = $client->fetch();
 
@@ -28,7 +28,7 @@ git
 use Arzola\TwitterClient;
 use Abraham\TwitterOAuth\TwitterOAuth;
 
-$client = new TwitterClient(TwitterOAuth('consumer_key', 'consumer_secret', 'access_token',
+$client = new TwitterClient(new TwitterOAuth('consumer_key', 'consumer_secret', 'access_token',
                                                                                  'access_token_secret'));
 
 //Post a tweet
@@ -40,9 +40,9 @@ $client->tweet('hello world');
 
 ### Tests
 
-To run the integrated unit tests please
+To run the integrated unit tests please run: 
 
-'vendor/bin/phpunit'
+> vendor/bin/phpunit
 
 #### TODO
 
