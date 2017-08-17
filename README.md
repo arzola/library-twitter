@@ -19,7 +19,7 @@ $tweets = $client->fetch();
 
 //You are done you got an a array of tweets with the ['text'] key;
 ```
-git 
+
 ### Example posting a tweet
 
 ```php
