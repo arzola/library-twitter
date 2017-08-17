@@ -1,0 +1,24 @@
+{
+    "name": "arzola/library-twitter",
+    "description": "Twitter TDD library example",
+    "type": "library",
+    "require": {
+        "abraham/twitteroauth": "^0.7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.3",
+        "mockery/mockery": "^0.9.9"
+    },
+    "authors": [
+        {
+            "name": "Oscar Arzola",
+            "email": "oscararzola@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload":{
+      "psr-4":{
+        "Arzola\\": "src/Classes/Arzola"
+      }
+    }
+}
